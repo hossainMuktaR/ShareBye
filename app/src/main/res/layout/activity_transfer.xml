@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".TransferActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/transfer_card_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/tv_File_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="File Name Here"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:gravity="center_horizontal"
+            android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:progressDrawable="@drawable/progress_bar_background"
+            android:layout_marginTop="20dp"
+            android:max="100"
+            tools:progress="50"/>
+
+        <TextView
+            android:id="@+id/btn_Send_Again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background"
+            android:text="Send Again"
+            android:paddingLeft="15dp"
+            android:paddingTop="7dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="7dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/parentitem"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    tools:background="@color/white"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon_view"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        tools:src="@drawable/ic_folder_24" />
+
+    <TextView
+        android:id="@+id/fileFolderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/icon_view"
+        android:padding="10dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/black"
+        tools:text="Document" />
+
+    <ImageView
+        android:id="@+id/im_item_send_button"
+        android:layout_width="25dp"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/send_arrow"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:layout_below="@id/fileFolderName"/>
+
+</RelativeLayout>
